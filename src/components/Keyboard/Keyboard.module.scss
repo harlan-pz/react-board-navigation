@@ -2,6 +2,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 70px;
   height: 70px;
   padding: 0 12px;
@@ -12,15 +13,39 @@
   color: white;
   font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
   font-size: 24px;
-  .shift-top {
-    margin-top: 5px; 
-    font-size: 20px
+  cursor: pointer;
+  &:active {
+    position: relative;
+    top: 3px;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
   }
-  .shift-bottom {
-    margin-top: 5px; 
-    font-size: 20px
+  &:hover {
+    .action {
+      visibility: visible;
+    }
   }
-  .key {
-    margin-top: 5px; 
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 55px;
+    margin-top: 3px;
+    visibility: hidden;
+    .delete, .edit {
+      background-color: #FFA503;
+      padding: 0 4px;
+      &:hover {
+        background-color: #12B7F5;
+      }
+    }
+  }
+  .icon {
+    margin-left: -44px;
+    margin-top: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
   }
 }

@@ -1,0 +1,27 @@
+.box {
+  height: 75px;
+  background-color: #000;
+  margin: 0 0 100px 0;
+  .search {
+    position: absolute;
+    right: 150px;
+    top: 5px;
+    &-bar {
+      background-color: #555;
+      border: none;
+      height: 27px;
+      color: #fff;
+      margin: 5px;
+      border-radius: 5px;
+      width: 200px;
+    }
+    &-baidu, &-google{
+      color: #fff;
+      background-color: #555;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin: 0 10px 0 0;
+    }
+  }
+}

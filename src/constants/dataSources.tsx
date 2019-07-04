@@ -1,11 +1,9 @@
 interface keyBoardSource {
   keyboard: string
   website?: string
-  shiftKeyboard?: string
-  
 }
 export const HEADERLINE: keyBoardSource[] = [
-  { keyboard: 'Q', website: 'https://www.qq.com/' },
+  { keyboard: 'Q', website: 'http://www.qq.com' },
   { keyboard: 'W'},
   { keyboard: 'E'},
   { keyboard: 'R'},
@@ -14,9 +12,7 @@ export const HEADERLINE: keyBoardSource[] = [
   { keyboard: 'U'},
   { keyboard: 'I'},
   { keyboard: 'O'},
-  { keyboard: 'P'},
-  { keyboard: '[', shiftKeyboard: '{'},
-  { keyboard: ']', shiftKeyboard: '}'}
+  { keyboard: 'P'}
 ]
 
 export const MIDDLELINE: keyBoardSource[] = [
@@ -24,13 +20,11 @@ export const MIDDLELINE: keyBoardSource[] = [
   { keyboard: 'S'},
   { keyboard: 'D'},
   { keyboard: 'F'},
-  { keyboard: 'G'},
+  { keyboard: 'G', website: 'https://www.google.com'},
   { keyboard: 'H'},
   { keyboard: 'J'},
   { keyboard: 'K'},
-  { keyboard: 'L'},
-  { keyboard: ';', shiftKeyboard: ':'},
-  { keyboard: '\'', shiftKeyboard: '"'}
+  { keyboard: 'L'}
 ]
 
 export const FOOTERLINE: keyBoardSource[] = [
@@ -38,10 +32,7 @@ export const FOOTERLINE: keyBoardSource[] = [
   { keyboard: 'X'},
   { keyboard: 'C'},
   { keyboard: 'V'},
-  { keyboard: 'B'},
+  { keyboard: 'B', website: 'http://www.baidu.com'},
   { keyboard: 'N'},
-  { keyboard: 'M'},
-  { keyboard: ',', shiftKeyboard: '<'},
-  { keyboard: '.', shiftKeyboard: '>'},
-  { keyboard: '/', shiftKeyboard: '?'}
+  { keyboard: 'M'}
 ]
